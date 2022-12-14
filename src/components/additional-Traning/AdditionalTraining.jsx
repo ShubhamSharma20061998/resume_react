@@ -2,18 +2,28 @@ import React from "react";
 import { AiFillCalendar } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import styles from "./AdditionalTraining.module.css";
+import vocational from "../../assets/CERT_VT.pdf";
+import machine_learning from "../../assets/attachment.pdf";
+import { FiExternalLink } from "react-icons/fi";
 const AdditionalTraining = () => {
   return (
     <>
       <div className={styles.vocational_training}>
         <h5>TATA STEEL LTD.</h5>
-        <h6>SD-WAN PERFORMANCE AND EVALUATION</h6>
+        <h6>
+          <a href={vocational} target="_blank">
+            SD-WAN PERFORMANCE AND EVALUATION
+          </a>
+          <span>
+            <FiExternalLink />
+          </span>
+        </h6>
         <span>
-          <AiFillCalendar />
+          <AiFillCalendar className={styles.icons} />
           June 2019 - July 2019
         </span>
-        <span>
-          <MdLocationOn />
+        <span className={styles.location}>
+          <MdLocationOn className={styles.icons} />
           Jamshedpur,India
         </span>
         <ul>
@@ -29,15 +39,22 @@ const AdditionalTraining = () => {
           <li>Understood the working of the Internet.</li>
         </ul>
       </div>
-      <div className="machine_learning">
+      <div className={styles.machine_learning}>
         <h5>ARDENT COMPUTECH PVT LTD</h5>
-        <h6>MACHINE LEARNING WITH PYTHON</h6>
+        <h6>
+          <a href={machine_learning} target="_blank">
+            MACHINE LEARNING WITH PYTHON
+          </a>
+          <span>
+            <FiExternalLink />
+          </span>
+        </h6>
         <span>
-          <AiFillCalendar />
+          <AiFillCalendar className={styles.icons} />
           December 2019 - January 2020
         </span>
-        <span>
-          <MdLocationOn />
+        <span className={styles.location}>
+          <MdLocationOn className={styles.icons} />
           Kolkata,India
         </span>
         <h6>PREDICTING HEART DISEASE</h6>

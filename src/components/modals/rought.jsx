@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./HospitalManagement.module.css";
+import styles from "./Community.module.css";
 
-const HospitalManagement = () => {
+const Community_1 = () => {
   return (
     <div
       className={`modal fade ${styles.modal}`}
@@ -14,7 +14,7 @@ const HospitalManagement = () => {
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header">
-            <h1 className="modal-title fs-5">HOSPITAL MANAGEMENT</h1>
+            <h1 className="modal-title fs-5">VESOMA</h1>
             <button
               type="button"
               className="btn-close"
@@ -24,15 +24,14 @@ const HospitalManagement = () => {
           </div>
           <div className="modal-body">
             <ul>
+              <li>Completed Web Developement training in Wix.</li>
               <li>
-                Worked on designing and developing the front-end of the website
-                with HTML,CSS and React.
+                Performed daily operations to ensure all solutions for client.
               </li>
-              <li>Making API calls and made to reflect on the UI.</li>
               <li>
-                Came to know about the rending of the UI based on conditions.
+                A static and responsive website for complete facility and
+                programs overview.
               </li>
-              <li>Working in a team came to know about being a teamplayer.</li>
             </ul>
           </div>
         </div>
@@ -41,4 +40,4 @@ const HospitalManagement = () => {
   );
 };
 
-export default HospitalManagement;
+export default Community_1;

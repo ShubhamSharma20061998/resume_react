@@ -1,3 +1,13 @@
 .vocational_training {
   border-bottom: 1px dotted;
 }
+.icons {
+  margin-right: 0.3rem;
+}
+.location {
+  margin-left: 3rem;
+}
+.vocational_training h6 a,
+.machine_learning h6 a {
+  color: var(--clickable);
+}

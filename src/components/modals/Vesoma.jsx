@@ -1,25 +1,22 @@
 import React from "react";
-import styles from "./Vesoma.module.jsx";
+import styles from "./Vesoma.module.css";
 
 const Vesoma = () => {
   return (
     <>
       {/* Modal */}
       <div
-        className="modal fade"
+        className={`modal fade ${styles.modal}`}
         id="Vesoma_popup"
-        data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabIndex={-1}
-        aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-scrollable">
+        {/* Vertically centered modal */}
+        <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="staticBackdropLabel">
-                VESOMA
-              </h1>
+              <h1 className="modal-title fs-5">VESOMA</h1>
               <button
                 type="button"
                 className="btn-close"

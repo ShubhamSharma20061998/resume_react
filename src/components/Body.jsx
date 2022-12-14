@@ -5,10 +5,10 @@ import { MdLocationOn } from "react-icons/md";
 import HospitalManagement from "./modals/HospitalManagement";
 import { useState } from "react";
 import StructuralEngineering from "./modals/StructuralEngineering";
-import Community from "./modals/Community";
 import Vesoma from "./modals/Vesoma";
 import AdditionalTraining from "./additional-Traning/AdditionalTraining";
 import { GiProgression, GiBackwardTime, GiBookCover } from "react-icons/gi";
+import Community_1 from "./modals/Community_1";
 
 const Body = () => {
   const [hospital_popup, setHospital] = useState(false);
@@ -28,35 +28,35 @@ const Body = () => {
               that will expand my skill set.
             </p>
           </div>
-          <div className="education">
+          <div className={`${styles.education}`}>
             <h3>EDUCATION</h3>
             <div className={`${styles.underline}`}></div>
-            <h5>B.Tech [Computer Science and Engineering]</h5>
-            <h6>F.I.E.M</h6>
+            <h5>FUTURE INSTITUTE OF ENGINEERING AND MANAGEMENT</h5>
+            <h6>B.Tech [Computer Science and Engineering]</h6>
             <span>
-              <AiFillCalendar />
+              <AiFillCalendar className={styles.icons} />
               2017-2021
             </span>
-            <span>
-              <MdLocationOn />
+            <span className={styles.location}>
+              <MdLocationOn className={styles.icons} />
               Kolkata,India
             </span>
             <div>
-              <span>Overall CGPA</span>
+              <span>Overall CGPA | </span>
               <span>8.14/10</span>
             </div>
           </div>
-          <div className="experience">
+          <div className={styles.experience}>
             <h3>EXPERIENCE</h3>
             <div className={`${styles.underline}`}></div>
             <div className={`${styles.test_yantra}`}>
               <h5>Front-End Development Intern</h5>
               <span>
-                <AiFillCalendar />
+                <AiFillCalendar className={styles.icons} />
                 Jan2021 - Aug2021
               </span>
-              <span>
-                <MdLocationOn />
+              <span className={styles.location}>
+                <MdLocationOn className={styles.icons} />
                 Bangalore,India - Office
               </span>
               <ul>
@@ -70,6 +70,7 @@ const Body = () => {
                 </li>
               </ul>
               <h6
+                className={styles.project_heading}
                 data-bs-toggle="modal"
                 data-bs-target="#hospital_popup"
                 onClick={() => setHospital(!hospital_popup)}
@@ -82,11 +83,11 @@ const Body = () => {
             <div className={`${styles.adwit}`}>
               <h5>Front-End Developer</h5>
               <span>
-                <AiFillCalendar />
+                <AiFillCalendar className={styles.icons} />
                 Aug2021 - Ongoing
               </span>
-              <span>
-                <MdLocationOn />
+              <span className={styles.location}>
+                <MdLocationOn className={styles.icons} />
                 Bangalore,India - Office
               </span>
               <ul>
@@ -98,18 +99,20 @@ const Body = () => {
                 </li>
                 <li>Designing and developing responsive webpages.</li>
               </ul>
-              <div className="community_site">
+              <div className={styles.community_site}>
                 <h6
+                  className={styles.project_heading}
                   data-bs-toggle="modal"
                   data-bs-target="#Community_popup"
                   onClick={() => setCommunity(!community)}
                 >
                   1.Community Site
                 </h6>
-                <>{community ? <Community /> : null}</>
+                <>{community ? <Community_1 /> : null}</>
               </div>
               <div className="Barcus">
                 <h6
+                  className={styles.project_heading}
                   data-bs-toggle="modal"
                   data-bs-target="#Structural_popup"
                   onClick={() => {
@@ -122,6 +125,7 @@ const Body = () => {
               </div>
               <div className="vesoma">
                 <h6
+                  className={styles.project_heading}
                   data-bs-toggle="modal"
                   data-bs-target="#Vesoma_popup"
                   onClick={() => setVesoma(!vesoma)}
@@ -141,31 +145,32 @@ const Body = () => {
           </div>
         </div>
         <div className={`col ${styles.right_wing}`}>
-          <div className="industry_skills">
+          <div className={styles.industry_skills}>
             <h3>INDUSTRY SKILLS</h3>
             <div className={`${styles.underline}`}></div>
             <div className="skills">
-              <div className={`${styles.recent}`}>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
-                <span>REACT</span>
-                <span>JQUERY</span>
+              <div className={`row ${styles.recent}`}>
+                <span className="col">HTML</span>
+                <span className="col">CSS</span>
+                <span className="col">JAVASCRIPT</span>
+                <span className="col">REACT</span>
+                <span className="col">JQUERY</span>
+                <span className="col">WIX</span>
               </div>
-              <div className="pervious">
-                <span>TailwindCSS</span>
-                <span>Ant-Design</span>
+              <div className={`row ${styles.pervious}`}>
+                <span className="col">TailwindCSS</span>
+                <span className="col">Ant-Design</span>
               </div>
             </div>
           </div>
-          <div className="strengths">
+          <div className={styles.strengths}>
             <h3>STRENGHTS</h3>
             <div className={`${styles.underline}`}></div>
             <div className="strength_list">
-              <div className="row learn_skills">
+              <div className={`row ${styles.learn_skills}`}>
                 <div className="col">
                   <span>
-                    <GiBookCover />
+                    <GiBookCover className={styles.icons} />
                   </span>
                   <span>
                     <b>Eager to learn new skills</b>
@@ -175,10 +180,10 @@ const Body = () => {
                   </span>
                 </div>
               </div>
-              <div className="row failure">
+              <div className={`row ${styles.failure}`}>
                 <div className="col">
                   <span>
-                    <GiProgression />
+                    <GiProgression className={styles.icons} />
                   </span>
                   <span>
                     <b>Not afraid of failure</b>
@@ -188,10 +193,10 @@ const Body = () => {
                   </span>
                 </div>
               </div>
-              <div className="row Time_management">
+              <div className={`row ${styles.Time_management}`}>
                 <div className="col">
                   <span>
-                    <GiBackwardTime />
+                    <GiBackwardTime className={styles.icons} />
                   </span>
                   <span>
                     <b>Time management</b>

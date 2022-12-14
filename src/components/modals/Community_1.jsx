@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./HospitalManagement.module.css";
+import styles from "./Community.module.css";
 
-const HospitalManagement = () => {
+const Community_1 = () => {
   return (
     <div
       className={`modal fade ${styles.modal}`}
-      id="hospital_popup"
+      id="Community_popup"
       data-bs-keyboard="false"
       tabIndex={-1}
       aria-hidden="true"
@@ -14,7 +14,7 @@ const HospitalManagement = () => {
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header">
-            <h1 className="modal-title fs-5">HOSPITAL MANAGEMENT</h1>
+            <h1 className="modal-title fs-5">COMMUNITY SITE</h1>
             <button
               type="button"
               className="btn-close"
@@ -25,14 +25,21 @@ const HospitalManagement = () => {
           <div className="modal-body">
             <ul>
               <li>
-                Worked on designing and developing the front-end of the website
-                with HTML,CSS and React.
+                A platform made for the local bussiness located in the county of
+                California,USA.
               </li>
-              <li>Making API calls and made to reflect on the UI.</li>
               <li>
-                Came to know about the rending of the UI based on conditions.
+                Worked on designing and developing the front-end of the website
+                with HTML,Css,Bootstrap,Jquery and JavaScript.
               </li>
-              <li>Working in a team came to know about being a teamplayer.</li>
+              <li>Gained skills on responsive Web-Designs.</li>
+              <li>
+                Worked in a team and provided quality front-end solutions.
+              </li>
+              <li>
+                Being in team with backend got to know the working bridge of
+                front-end and back-end.
+              </li>
             </ul>
           </div>
         </div>
@@ -41,4 +48,4 @@ const HospitalManagement = () => {
   );
 };
 
-export default HospitalManagement;
+export default Community_1;

@@ -12,3 +12,33 @@
 .recent {
   border-bottom: 1px dotted;
 }
+.icons {
+  margin-right: 0.3rem;
+}
+.strengths .icons {
+  color: var(--clickable);
+  font-size: 1.5rem;
+}
+.education,
+.experience,
+.industry_skills {
+  margin-bottom: 1rem;
+}
+.recent span,
+.pervious span {
+}
+.learn_skills,
+.failure,
+.Time_management {
+  margin-bottom: 0.8rem;
+}
+.location {
+  margin-left: 3rem;
+}
+.project_heading {
+  cursor: pointer;
+}
+.education h6,
+.experience h6 {
+  color: var(--clickable);
+}
